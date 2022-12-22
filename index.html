@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Display Layouts</title>
 
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
@@ -14,20 +14,27 @@
     <header>
         <nav>
             <div>
-                <span>Logo</span>
+                <span>Refresh</span>
+                <img src="./assets/refresh-svgrepo-com.svg" alt="">
             </div>
 
             <div>
                 <ul>
-                    <li>Flex and Grid</li>
-                    <li>Grid</li>
+                    <li id="displayFlexAndGrid">Flex and Grid</li>
+                    <li id="displayGrid">Grid</li>
                     <li>Flex (Youtube-Style)</li>
                 </ul>
             </div>
         </nav>
     </header>
 
-    <main>
+    <article>
+        <div class="main-access">
+            <span>Select your Display Style above</span>
+        </div>
+    </article>
+
+    <main class="flex-and-grid hide">
         <section class="top-elements">
             <div class="l-element">
                 <div class="img"></div>
@@ -91,6 +98,46 @@
     
                     <span>Item 9</span>
                 </div>
+            </div>
+        </section>
+    </main>
+
+    <main class="grid hide">
+        <section class="top-elements">
+            <div class="l-element">
+                <div class="img"></div>
+
+                <span>Item 1</span>
+            </div>
+
+            <div class="l-element">
+                <div class="img"></div>
+
+                <span>Item 2</span>
+            </div>
+
+            <div class="l-element">
+                <div class="img"></div>
+
+                <span>Item 3</span>
+            </div>
+
+            <div class="l-element">
+                <div class="img"></div>
+
+                <span>Item 4</span>
+            </div>
+
+            <div class="l-element">
+                <div class="img"></div>
+
+                <span>Item 5</span>
+            </div>
+
+            <div class="l-element">
+                <div class="img"></div>
+
+                <span>Item 6</span>
             </div>
         </section>
     </main>

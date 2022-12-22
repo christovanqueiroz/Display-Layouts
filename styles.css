@@ -21,6 +21,19 @@ header nav {
 
 header nav div:first-child {
     margin: 0 2em;
+    font-size: 1.25em;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+header nav div:first-child img {
+    padding: 0.2em;
+    height: 1em;
+    width: 1em;
+    background-color: #FFF;
 }
 
 header nav div ul {
@@ -31,38 +44,142 @@ header nav div ul {
     margin-right: 2em;
 }
 
-main {
+header nav div ul li {
+    cursor: pointer;
+}
+
+.main-access {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 4em;
+    height: 2em;
+    align-items: center;
+    font-size: 1.5em;
+}
+
+.flex-and-grid {
     display: flex;
     flex-direction: column;
     flex: 9;
-    margin-top: 1em;
+    margin-top: 2em;
+    gap: 2em;
 }
 
-.top-elements {
+.flex-and-grid .top-elements {
     display: flex;
-    justify-content: center;
-    gap: 2em;
+    justify-content: space-evenly;
     flex: 1;
 }
 
-.l-element {
+.flex-and-grid .l-element {
     display: flex;
     flex-direction: column;
     width: 25%;
     height: 12em;
 }
 
-.img {
+.flex-and-grid .l-element .img {
     background-color: #919191;
     height: 90%;
     width: 100%;
 }
 
-.l-element span {
+.flex-and-grid .l-element span {
     height: 10%;
     width: 100%;
 }
 
-.bottom-elements {
-    flex: 2
+.flex-and-grid .bottom-elements {
+    display: grid;
+    grid-template-columns: 415px 2fr;
+    justify-items: flex-end;
+    column-gap: 5em;
+}
+
+.flex-and-grid .advertising {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 331.25px;
+    height: 15em;
+}
+
+.flex-and-grid .advertising .advertise {
+    border: 1px solid #000;
+    height: 90%;
+    min-width: 329.25px;
+}
+
+.flex-and-grid .advertising span {
+    padding-top: .25em;
+    height: 10%;
+}
+
+.flex-and-grid .small-elements {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 1em;
+    column-gap: 5.25em;
+    justify-self: start;
+}
+
+.flex-and-grid .small-elements .s-element {
+    min-width: 331.25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-and-grid .small-elements .s-element .img {
+    background-color: #919191;
+    height: 100%;
+    width: 60%;
+}
+
+.flex-and-grid .small-elements .s-element span {
+    height: 100%;
+    width: 40%;
+    font-size: 1.25em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid {
+    flex: 9;
+    display: grid;
+    margin: 2em 2em 0 2em;
+}
+
+.grid .top-elements {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    flex: 1;
+    justify-items: center;
+    column-gap: 3em;
+    row-gap: 1em;
+}
+
+.grid .l-element {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 15em;
+    text-align: center;
+}
+
+.grid .l-element .img {
+    background-color: #919191;
+    height: 90%;
+    width: 100%;
+}
+
+.grid .l-element span {
+    height: 10%;
+    width: 100%;
+}
+
+.hide {
+    display: none;
 }
